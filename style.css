@@ -1,0 +1,19 @@
+#notes-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.note {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: #fdffaa;
+  border: 1px solid black;
+}
+
+.x-button {
+  position: relative;
+  left: 175px;
+  top: 2px;
+}
