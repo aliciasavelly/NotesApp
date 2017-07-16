@@ -220,16 +220,29 @@ span {
   }
 
   .note {
-    width: 95%;
-    margin: 2.5%;
+    width: 93%;
+    margin: 3.5%;
     height: 13em;
     font-size: 3em;
+  }
+
+  .no-margin {
+    margin: 0;
+    position: absolute;
+    bottom: 3px;
   }
 
   .new-note-button, .hamburger {
     width: 120px;
     height: 120px;
-    /*font-size: 40px;*/
+    position: relative;
+  }
+
+  .new-note-button {
+    font-size: 7em;
+  }
+
+  .hamburger {
     font-size: 4em;
   }
 
@@ -242,6 +255,7 @@ span {
 
   .x-button {
     font-size: 55px;
+    margin: .1em .2em 0 0;
   }
 
   .background-img {
@@ -250,12 +264,16 @@ span {
     margin: 2em 2em 0 2em;
   }
 
+  .background-img:last-child {
+    margin-bottom: 2em;
+  }
+
   .close-background {
-    /*margin: 10px;*/
-    line-height: 55px;
-    font-size: 60px;
-    left: 455px;
-    /*top: 3px;*/
+    display: none;
+  }
+
+  .top-bar {
+    margin: 2em 0 0 2em;
   }
 }
 
