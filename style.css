@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 body {
   background-image: url('backgrounds/brooke-lark.jpg');
   background-position: center;
@@ -5,10 +9,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Raleway', sans-serif;
-}
-
-body, html {
-  height: 100%;
 }
 
 .top-bar {
@@ -35,6 +35,20 @@ body, html {
   justify-content: center;
 }
 
+.hamburger {
+  background-color: #a0ffdd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 8px 15px 0 0;
+}
+
+.new-note-button, .hamburger {
+  transition: background-color 2s;
+}
+
 #notes-section {
   display: flex;
   flex-direction: row;
@@ -59,10 +73,6 @@ body, html {
 
 .note:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.new-note-button, .hamburger {
-  transition: background-color 2s;
 }
 
 .x-button {
@@ -166,16 +176,6 @@ span {
   background-color: #E1FFF4;
   vertical-align: baseline;
   margin-bottom: 10px;
-}
-
-.hamburger {
-  background-color: #a0ffdd;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  margin: 8px 15px 0 0;
 }
 
 .background-images {
