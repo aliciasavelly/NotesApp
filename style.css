@@ -1,4 +1,5 @@
 body {
+  background-image: url('backgrounds/brooke-lark.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +10,23 @@ body, html {
   height: 100%;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 20px;
+}
+
 .new-note-button {
-  margin: 20px 20px 0 20px;
+  margin: 0 30px 0 0;
+  width: 40px;
+  height: 40px;
+  background-color: #a0ffdd;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 #notes-section {
@@ -19,30 +35,12 @@ body, html {
   width: 100%;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #909;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #909;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #909;
-}
-
 .note {
   box-sizing: border-box;
   width: 21%;
   height: 230px;
   margin: 2%;
-  background-color: #fdffaa;
+  background-color: #a0ffdd;
   border: 1px solid #DFE0E4;
   position: relative;
   display: flex;
@@ -102,11 +100,36 @@ span {
   background-color: #e4b7ff;
 }
 
-.choose-yellow, .choose-green, .choose-pink, .choose-blue, .choose-purple {
+.color-picker {
   width: 30px;
   height: 30px;
   border: none;
   border-radius: 10px;
+  margin: 0 3px;
+}
+
+.choose-yellow:hover {
+  background-color: #FCFF79;
+}
+
+.choose-green:hover {
+  background-color: #71FFCD;
+}
+
+.choose-pink:hover {
+  background-color: #F9A1FF;
+}
+
+.choose-blue:hover {
+  background-color: #87C4FF;
+}
+
+.choose-purple:hover {
+  background-color: #D388FF;
+}
+
+.color-picker:hover {
+  transition: background-color .25s;
 }
 
 @media (max-width: 900px) {

@@ -3,17 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="functions.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
     <title></title>
   </head>
-  <body background="brooke-lark.jpg">
-    <button onClick="newNote()" class="new-note-button">Add a new note!</button>
-    <button class="choose-yellow" onClick="changeNoteColor('#fdffaa')"></button>
-    <button class="choose-green" onClick="changeNoteColor('#a0ffdd')"></button>
-    <button class="choose-pink" onClick="changeNoteColor('#fddbff')"></button>
-    <button class="choose-blue" onClick="changeNoteColor('#b5dbff')"></button>
-    <button class="choose-purple" onClick="changeNoteColor('#e4b7ff')"></button>
+  <body>
+    <div class="top-bar">
+      <button onClick="newNote()" class="new-note-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+      <button class="choose-yellow color-picker" onClick="changeNoteColor('#fdffaa')"></button>
+      <button class="choose-green color-picker" onClick="changeNoteColor('#a0ffdd')"></button>
+      <button class="choose-pink color-picker" onClick="changeNoteColor('#fddbff')"></button>
+      <button class="choose-blue color-picker" onClick="changeNoteColor('#b5dbff')"></button>
+      <button class="choose-purple color-picker" onClick="changeNoteColor('#e4b7ff')"></button>
+
+      <div class="choose-background">
+        <button onClick="openBackgroundSection()"><i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
     <div id="notes-section">
       <div id="note-0" class="note">
         <div class="button-holder">
@@ -22,6 +30,5 @@
         <span placeholder="Type here..." contenteditable="true"></span>
       </div>
     </div>
-
   </body>
 </html>
