@@ -35,10 +35,17 @@ button {
   background-color: #a0ffdd;
   border-radius: 50%;
   border: none;
-  font-size: 20px;
+  font-size: 2.5em;
   display: flex;
   align-content: center;
   justify-content: center;
+  position: relative;
+}
+
+.no-margin {
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
 }
 
 .choose-yellow {
