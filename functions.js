@@ -1,4 +1,4 @@
-NOTES_IDX = 2;
+NOTES_IDX = 1;
 CURRENT_NOTE_COLOR = "#a0ffdd";
 
 function newNote() {
@@ -24,30 +24,20 @@ function changeNoteColor(color) {
   $(".hamburger").css("background-color", color);
   $(".new-note-button").css("background-color", color);
 
-  let backgroundSectionColor = "#E1FFF4";
-  if (color === "#fdffaa") {
-    backgroundSectionColor = "#FFFFEE";
-  } else if (color === "#a0ffdd") {
-    backgroundSectionColor = "#E1FFF4";
-  } else if (color === "#fddbff") {
-    backgroundSectionColor = "#fef2ff";
-  } else if (color === "#b5dbff") {
-    backgroundSectionColor = "#d8ecff";
-  } else if (color === "#e4b7ff") {
-    backgroundSectionColor = "#f2ddff";
+  let backgroundColors = {
+    "#fdffaa": "#FFFFEE",
+    "#a0ffdd": "#E1FFF4",
+    "#fddbff": "#fef2ff",
+    "#b5dbff": "#d8ecff",
+    "#e4b7ff": "#f2ddff"
   }
 
-  $(".choose-background").css("background-color", backgroundSectionColor);
-
+  $(".choose-background").css("background-color", backgroundColors[color]);
   CURRENT_NOTE_COLOR = color;
 }
 
-function openBackgroundSection() {
-  $(".choose-background").css("display", "flex");
-}
-
-function closeBackgroundSection() {
-  $(".choose-background").css("display", "none");
+function toggleBackgroundSection(state) {
+  $(".choose-background").css("display", state);
 }
 
 function changeBackground(src) {
