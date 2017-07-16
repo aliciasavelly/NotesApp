@@ -212,6 +212,10 @@ span {
 }
 
 @media only screen and (max-device-width: 480px) {
+  #notes-section {
+    margin-top: 2em;
+  }
+
   .note {
     width: 95%;
     margin: 2.5%;
