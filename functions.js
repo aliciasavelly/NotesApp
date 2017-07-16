@@ -24,13 +24,7 @@ function changeNoteColor(color) {
   $(".hamburger").css("background-color", color);
   $(".new-note-button").css("background-color", color);
 
-// #FCFF79
-// #71FFCD
-// #F9A1FF
-// #87C4FF
-// #D388FF
   let backgroundSectionColor = "#E1FFF4";
-  // debugger;
   if (color === "#fdffaa") {
     backgroundSectionColor = "#FFFFEE";
   } else if (color === "#a0ffdd") {

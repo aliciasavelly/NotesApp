@@ -53,6 +53,11 @@ body, html {
   flex-direction: column;
   border-radius: 4px;
   transition: background-color 2s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.note:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .new-note-button, .hamburger {
