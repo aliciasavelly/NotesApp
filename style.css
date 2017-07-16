@@ -176,6 +176,7 @@ span {
   overflow: auto;
   background-color: #E1FFF4;
   margin-bottom: 10px;
+  transition: display 10s;
 }
 
 .close-background {
@@ -192,6 +193,7 @@ span {
   position: relative;
   left: 125px;
   top: 3px;
+  outline: none;
 }
 
 .background-images {

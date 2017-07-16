@@ -36,11 +36,21 @@ function changeNoteColor(color) {
   CURRENT_NOTE_COLOR = color;
 }
 
-function toggleBackgroundSection(state) {
-  $(".choose-background").css("display", state);
+function openBackgroundSection() {
+  $(".choose-background").fadeIn(500).css("display", "flex");
+}
+
+function closeBackgroundSection() {
+  $(".choose-background").animate({opacity: 0});
+  setTimeout( function() {
+    $(".choose-background").css("display", "none");
+    $(".choose-background").animate({opacity: 1});
+  }, 500);
+  // $(".choose-background").animate({opacity: 0});
 }
 
 function changeBackground(src) {
+  closeBackgroundSection();
   $("body").css("background-image", `url(${src})`);
 }
 

@@ -21,7 +21,7 @@
       </div>
 
       <div class="background-div">
-        <button class="hamburger" onClick="toggleBackgroundSection('flex')"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <button class="hamburger" onClick="openBackgroundSection()"><i class="fa fa-bars" aria-hidden="true"></i></button>
       </div>
     </div>
 
@@ -35,7 +35,7 @@
     </div>
 
     <div class="choose-background">
-      <button onClick="toggleBackgroundSection('none')" class="close-background"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <button onClick="closeBackgroundSection()" class="close-background"><i class="fa fa-times" aria-hidden="true"></i></button>
       <div class="background-images">
         <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/brooke-lark.jpg" alt="">
         <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/tim-mossholder.jpg" alt="">
