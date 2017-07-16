@@ -239,6 +239,24 @@ span {
     border-radius: 2.5em;
     margin: 1em;
   }
+
+  .x-button {
+    font-size: 55px;
+  }
+
+  .background-img {
+    width: 30em;
+    height: 22em;
+    margin: 2em 2em 0 2em;
+  }
+
+  .close-background {
+    /*margin: 10px;*/
+    line-height: 55px;
+    font-size: 60px;
+    left: 455px;
+    /*top: 3px;*/
+  }
 }
 
 @media (max-width: 900px) {
