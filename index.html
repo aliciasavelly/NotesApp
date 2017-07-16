@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script type="text/javascript" src="functions.js"></script>
     <script src="jquery-3.2.1.min.js"></script>
     <title></title>
@@ -27,7 +28,7 @@
     <div id="notes-section" onClick="closeBackgroundSection()">
       <div id="note-0" class="note">
         <div class="button-holder">
-          <button id="0" type="button" name="button" class="x-button" onClick="deleteNote(`note-${this.id}`)">X</button>
+          <button id="0" type="button" name="button" class="x-button" onClick="deleteNote(`note-${this.id}`)"><i class="fa fa-times" aria-hidden="true"></i></button>
         </div>
         <span placeholder="Type here..." contenteditable="true"></span>
       </div>

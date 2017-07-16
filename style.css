@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
 }
 
 body, html {
@@ -47,7 +48,7 @@ body, html {
   height: 230px;
   margin: 2%;
   background-color: #a0ffdd;
-  border: 1px solid #DFE0E4;
+  border: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -62,6 +63,12 @@ body, html {
 
 .new-note-button, .hamburger {
   transition: background-color 2s;
+}
+
+.x-button {
+  background-color: Transparent;
+  border: none;
+  font-size: 20px;
 }
 
 button {
