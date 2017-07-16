@@ -154,7 +154,7 @@ span {
 
 [contenteditable=true]:empty:before {
   content: attr(placeholder);
-  display: block; /* For Firefox */
+  display: block;
 }
 
 [contenteditable]:focus {
@@ -169,9 +169,7 @@ span {
   flex-direction: column;
   height: 100vh;
   overflow: auto;
-  /* TODO */
   background-color: #E1FFF4;
-  vertical-align: baseline;
   margin-bottom: 10px;
 }
 
