@@ -6,7 +6,8 @@ function newNote() {
                                     class='note'
                                     style="background-color:${CURRENT_NOTE_COLOR}">
                                <div class="button-holder">
-                               <button type="button"
+                               <button id=${NOTES_IDX}
+                                       type="button"
                                        name="button"
                                        class="x-button"
                                        onClick="deleteNote('note-${NOTES_IDX}')">X</button></div>
