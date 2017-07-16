@@ -15,19 +15,41 @@
   margin: 2%;
   background-color: #fdffaa;
   border: 1px solid black;
-  padding: 0 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  /*cursor: pointer;*/
+}
+
+button {
+  cursor: pointer;
+}
+
+span {
+  width: 90%;
+  margin: 2px 4%;
+  cursor: pointer;
+  height: 85%;
+  display: block;
+  overflow: auto;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+.button-holder {
+  float: right;
+  margin: 2px;
 }
 
 .x-button {
-  position: absolute;
-  left: 192px;
-  top: 5px;
-  z-index: 1;
-}
-
-p {
-  float: left;
+  float: right;
 }
 
 @media (max-width: 900px) {
@@ -35,11 +57,25 @@ p {
     width: 46%;
     margin: 2%;
   }
+
+  .x-button {
+    left: 93%;
+  }
+}
+
+@media (max-width: 800px) {
+  .x-button {
+    left: 90%;
+  }
 }
 
 @media (max-width: 600px) {
   .note {
     width: 95%;
     margin: 2.5%;
+  }
+
+  .x-button {
+
   }
 }
