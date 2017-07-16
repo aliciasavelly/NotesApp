@@ -20,6 +20,7 @@ body {
 
 .left-section {
   display: flex;
+  align-items: center;
 }
 
 button {
@@ -204,6 +205,27 @@ span {
 
 .background-img:last-child {
   margin-bottom: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .note {
+    width: 95%;
+    margin: 2.5%;
+    height: 13em;
+    font-size: 3em;
+  }
+
+  .new-note-button, .hamburger {
+    width: 120px;
+    height: 120px;
+  }
+
+  .color-picker {
+    width: 90px;
+    height: 90px;
+    border-radius: 2.5em;
+    margin: 1em;
+  }
 }
 
 @media (max-width: 900px) {
