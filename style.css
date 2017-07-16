@@ -102,6 +102,10 @@ button {
   margin: 8px 15px 0 0;
 }
 
+.hamburger:focus {
+  outline: none;
+}
+
 .new-note-button, .hamburger {
   transition: background-color 2s;
 }
@@ -218,6 +222,8 @@ span {
   .new-note-button, .hamburger {
     width: 120px;
     height: 120px;
+    /*font-size: 40px;*/
+    font-size: 4em;
   }
 
   .color-picker {
