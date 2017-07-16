@@ -139,23 +139,49 @@ span {
 }
 
 .choose-background {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   flex-direction: column;
   height: 100vh;
   overflow: auto;
-  background-color: white;
+  background-color: #dbfcff;
   vertical-align: baseline;
+  margin-bottom: 10px;
+}
+
+.background-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-background {
+  background-color: Transparent;
+  border: none;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  justify-content: flex-end;
+  line-height: 10px;
+  text-align: right;
+  font-size: 20px;
+  width: 25px;
+  position: relative;
+  left: 125px;
+  top: 3px;
 }
 
 .background-img {
   width: 150px;
   height: 110px;
-  /*overflow: hidden;*/
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.background-img:last-child {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 900px) {

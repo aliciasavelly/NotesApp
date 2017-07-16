@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="top-bar">
-      <div class="left-section">
+      <div class="left-section" onClick="closeBackgroundSection()">
         <button onClick="newNote()" class="new-note-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
         <button class="choose-yellow color-picker" onClick="changeNoteColor('#fdffaa')"></button>
         <button class="choose-green color-picker" onClick="changeNoteColor('#a0ffdd')"></button>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div id="notes-section">
+    <div id="notes-section" onClick="closeBackgroundSection()">
       <div id="note-0" class="note">
         <div class="button-holder">
           <button id="0" type="button" name="button" class="x-button" onClick="deleteNote(`note-${this.id}`)">X</button>
@@ -35,15 +35,17 @@
     </div>
 
     <div class="choose-background">
-      <button onClick="closeBackgroundSection()">x</button>
-      <img class="background-img" src="./backgrounds/brooke-lark.jpg" alt="">
-      <img class="background-img" src="./backgrounds/tim-mossholder.jpg" alt="">
-      <img class="background-img" src="./backgrounds/jakub-kapusnak.jpg" alt="">
-      <img class="background-img" src="./backgrounds/leonardo-wong.jpg" alt="">
-      <img class="background-img" src="./backgrounds/michael-depetris.jpg" alt="">
-      <img class="background-img" src="./backgrounds/cam-adams.jpg" alt="">
-      <img class="background-img" src="./backgrounds/raphael-biscaldi.jpg" alt="">
-      <img class="background-img" src="./backgrounds/brandi-redd.jpg" alt="">
+      <button onClick="closeBackgroundSection()" class="close-background"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <div class="background-images">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/brooke-lark.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/tim-mossholder.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/jakub-kapusnak.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/leonardo-wong.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/michael-depetris.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/cam-adams.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/raphael-biscaldi.jpg" alt="">
+        <img onClick="changeBackground(this.src)" class="background-img" src="./backgrounds/brandi-redd.jpg" alt="">
+      </div>
     </div>
   </body>
 </html>

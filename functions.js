@@ -31,3 +31,7 @@ function openBackgroundSection() {
 function closeBackgroundSection() {
   $(".choose-background").css("display", "none");
 }
+
+function changeBackground(src) {
+  $("body").css("background-image", `url(${src})`);
+}
