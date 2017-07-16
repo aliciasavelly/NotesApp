@@ -52,6 +52,33 @@ span {
   float: right;
 }
 
+.choose-yellow {
+  background-color: #fdffaa;
+}
+
+.choose-green {
+  background-color: #a0ffdd;
+}
+
+.choose-pink {
+  background-color: #fddbff;
+}
+
+.choose-blue {
+  background-color: #b5dbff;
+}
+
+.choose-purple {
+  background-color: #e4b7ff;
+}
+
+.choose-yellow, .choose-green, .choose-pink, .choose-blue, .choose-purple {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
 @media (max-width: 900px) {
   .note {
     width: 46%;
