@@ -21,6 +21,8 @@ function deleteNote(id) {
 
 function changeNoteColor(color) {
   $(".note").css("background-color", color);
+  $(".hamburger").css("background-color", color);
+  $(".new-note-button").css("background-color", color);
   CURRENT_NOTE_COLOR = color;
 }
 

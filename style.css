@@ -55,6 +55,10 @@ body, html {
   transition: background-color 2s;
 }
 
+.new-note-button, .hamburger {
+  transition: background-color 2s;
+}
+
 button {
   cursor: pointer;
 }
@@ -149,6 +153,15 @@ span {
   background-color: #dbfcff;
   vertical-align: baseline;
   margin-bottom: 10px;
+}
+
+.hamburger {
+  background-color: #a0ffdd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }
 
 .background-images {
