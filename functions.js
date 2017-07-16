@@ -23,6 +23,28 @@ function changeNoteColor(color) {
   $(".note").css("background-color", color);
   $(".hamburger").css("background-color", color);
   $(".new-note-button").css("background-color", color);
+
+// #FCFF79
+// #71FFCD
+// #F9A1FF
+// #87C4FF
+// #D388FF
+  let backgroundSectionColor = "#E1FFF4";
+  // debugger;
+  if (color === "#fdffaa") {
+    backgroundSectionColor = "#FFFFEE";
+  } else if (color === "#a0ffdd") {
+    backgroundSectionColor = "#E1FFF4";
+  } else if (color === "#fddbff") {
+    backgroundSectionColor = "#fef2ff";
+  } else if (color === "#b5dbff") {
+    backgroundSectionColor = "#d8ecff";
+  } else if (color === "#e4b7ff") {
+    backgroundSectionColor = "#f2ddff";
+  }
+
+  $(".choose-background").css("background-color", backgroundSectionColor);
+
   CURRENT_NOTE_COLOR = color;
 }
 

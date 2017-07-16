@@ -150,7 +150,8 @@ span {
   flex-direction: column;
   height: 100vh;
   overflow: auto;
-  background-color: #dbfcff;
+  /* TODO */
+  background-color: #E1FFF4;
   vertical-align: baseline;
   margin-bottom: 10px;
 }
@@ -162,6 +163,7 @@ span {
   width: 40px;
   height: 40px;
   font-size: 20px;
+  margin: 8px 15px 0 0;
 }
 
 .background-images {
