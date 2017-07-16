@@ -59,6 +59,38 @@ button {
   background-color: #e4b7ff;
 }
 
+.choose-yellow:hover {
+  background-color: #FCFF79;
+}
+
+.choose-green:hover {
+  background-color: #71FFCD;
+}
+
+.choose-pink:hover {
+  background-color: #F9A1FF;
+}
+
+.choose-blue:hover {
+  background-color: #87C4FF;
+}
+
+.choose-purple:hover {
+  background-color: #D388FF;
+}
+
+.color-picker {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 3px;
+}
+
+.color-picker:hover {
+  transition: background-color .25s;
+}
+
 .hamburger {
   background-color: #a0ffdd;
   border: none;
@@ -127,38 +159,6 @@ span {
 
 [contenteditable]:focus {
   outline: 0px solid transparent;
-}
-
-.color-picker {
-  width: 30px;
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-  margin: 0 3px;
-}
-
-.choose-yellow:hover {
-  background-color: #FCFF79;
-}
-
-.choose-green:hover {
-  background-color: #71FFCD;
-}
-
-.choose-pink:hover {
-  background-color: #F9A1FF;
-}
-
-.choose-blue:hover {
-  background-color: #87C4FF;
-}
-
-.choose-purple:hover {
-  background-color: #D388FF;
-}
-
-.color-picker:hover {
-  transition: background-color .25s;
 }
 
 .choose-background {
