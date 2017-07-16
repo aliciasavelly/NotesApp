@@ -175,11 +175,6 @@ span {
   margin-bottom: 10px;
 }
 
-.background-images {
-  display: flex;
-  flex-direction: column;
-}
-
 .close-background {
   background-color: Transparent;
   border: none;
@@ -194,6 +189,11 @@ span {
   position: relative;
   left: 125px;
   top: 3px;
+}
+
+.background-images {
+  display: flex;
+  flex-direction: column;
 }
 
 .background-img {
@@ -229,9 +229,5 @@ span {
   .note {
     width: 95%;
     margin: 2.5%;
-  }
-
-  .x-button {
-
   }
 }
