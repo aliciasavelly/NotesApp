@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="top-bar">
-      <div class="left-section" onClick="toggleBackgroundSection('none')">
+      <div class="left-section">
         <button onClick="newNote()" class="new-note-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
         <button class="choose-yellow color-picker" onClick="changeNoteColor('#fdffaa')"></button>
         <button class="choose-green color-picker" onClick="changeNoteColor('#a0ffdd')"></button>
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div id="notes-section" onClick="toggleBackgroundSection('none')">
+    <div id="notes-section">
       <div id="note-0" class="note">
         <div class="button-holder">
           <button id="0" type="button" name="button" class="x-button" onClick="deleteNote(`note-${this.id}`)"><i class="fa fa-times" aria-hidden="true"></i></button>
