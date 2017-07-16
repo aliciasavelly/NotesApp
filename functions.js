@@ -23,3 +23,11 @@ function changeNoteColor(color) {
   $(".note").css("background-color", color);
   CURRENT_NOTE_COLOR = color;
 }
+
+function openBackgroundSection() {
+  $(".choose-background").css("display", "flex");
+}
+
+function closeBackgroundSection() {
+  $(".choose-background").css("display", "none");
+}

@@ -10,18 +10,20 @@
   </head>
   <body>
     <div class="top-bar">
-      <button onClick="newNote()" class="new-note-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
-      <button class="choose-yellow color-picker" onClick="changeNoteColor('#fdffaa')"></button>
-      <button class="choose-green color-picker" onClick="changeNoteColor('#a0ffdd')"></button>
-      <button class="choose-pink color-picker" onClick="changeNoteColor('#fddbff')"></button>
-      <button class="choose-blue color-picker" onClick="changeNoteColor('#b5dbff')"></button>
-      <button class="choose-purple color-picker" onClick="changeNoteColor('#e4b7ff')"></button>
+      <div class="left-section">
+        <button onClick="newNote()" class="new-note-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button class="choose-yellow color-picker" onClick="changeNoteColor('#fdffaa')"></button>
+        <button class="choose-green color-picker" onClick="changeNoteColor('#a0ffdd')"></button>
+        <button class="choose-pink color-picker" onClick="changeNoteColor('#fddbff')"></button>
+        <button class="choose-blue color-picker" onClick="changeNoteColor('#b5dbff')"></button>
+        <button class="choose-purple color-picker" onClick="changeNoteColor('#e4b7ff')"></button>
+      </div>
 
-      <div class="choose-background">
-        <button onClick="openBackgroundSection()"><i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
+      <div class="background-div">
+        <button onClick="openBackgroundSection()"><i class="fa fa-bars" aria-hidden="true"></i></button>
       </div>
     </div>
+
     <div id="notes-section">
       <div id="note-0" class="note">
         <div class="button-holder">
@@ -29,6 +31,19 @@
         </div>
         <span placeholder="Type here..." contenteditable="true"></span>
       </div>
+
+    </div>
+
+    <div class="choose-background">
+      <button onClick="closeBackgroundSection()">x</button>
+      <img class="background-img" src="./backgrounds/brooke-lark.jpg" alt="">
+      <img class="background-img" src="./backgrounds/tim-mossholder.jpg" alt="">
+      <img class="background-img" src="./backgrounds/jakub-kapusnak.jpg" alt="">
+      <img class="background-img" src="./backgrounds/leonardo-wong.jpg" alt="">
+      <img class="background-img" src="./backgrounds/michael-depetris.jpg" alt="">
+      <img class="background-img" src="./backgrounds/cam-adams.jpg" alt="">
+      <img class="background-img" src="./backgrounds/raphael-biscaldi.jpg" alt="">
+      <img class="background-img" src="./backgrounds/brandi-redd.jpg" alt="">
     </div>
   </body>
 </html>
