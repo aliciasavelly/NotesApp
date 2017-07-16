@@ -46,11 +46,9 @@ function changeBackground(src) {
 
 window.onload = function clickOutside() {
   $(document).mouseup(function(e) {
-    var container = $(".choose-background");
+    let container = $(".choose-background");
 
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0)
-    {
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
       container.hide();
     }
   });
