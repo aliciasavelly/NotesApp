@@ -24,13 +24,20 @@ function changeNoteColor(color) {
   $(".note").css("background-color", color);
   $(".hamburger").css("background-color", color);
   $(".new-note-button").css("background-color", color);
+  $(".close-background").mouseenter(function() {
+    $(".close-background").css("background-color", color);
+  }).mouseleave(function() {
+    $(".close-background").css("background-color", "Transparent");
+  });
+  // $(".close-background").hover().css("background-color", "blue");
 
   let backgroundColors = {
     "#fdffaa": "#FFFFEE",
     "#a0ffdd": "#E1FFF4",
     "#fddbff": "#fef2ff",
     "#b5dbff": "#d8ecff",
-    "#e4b7ff": "#f2ddff"
+    "#e4b7ff": "#f2ddff",
+    "#b7fff6": "#dbfffa"
   }
 
   $(".choose-background").css("background-color", backgroundColors[color]);
@@ -53,7 +60,7 @@ function changeBackground(src) {
   if (screen.width < 415) {
     closeBackgroundSection();
   }
-  
+
   $("body").css("background-image", `url(${src})`);
 }
 

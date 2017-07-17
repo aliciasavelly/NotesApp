@@ -1,7 +1,3 @@
-body, html {
-  /*height: 100%;*/
-}
-
 body {
   background-image: url('backgrounds/brooke-lark.jpg');
   background-position: center;
@@ -32,7 +28,7 @@ button {
   margin: 0 30px 0 0;
   width: 40px;
   height: 40px;
-  background-color: #a0ffdd;
+  background-color: #b7fff6;
   border-radius: 50%;
   border: none;
   font-size: 2.5em;
@@ -46,6 +42,10 @@ button {
   margin: 0;
   position: absolute;
   bottom: 0px;
+}
+
+.choose-main {
+  background-color: #b7fff6;
 }
 
 .choose-yellow {
@@ -66,6 +66,10 @@ button {
 
 .choose-purple {
   background-color: #e4b7ff;
+}
+
+.choose-main:hover {
+  background-color: #84ffee;
 }
 
 .choose-yellow:hover {
@@ -101,7 +105,7 @@ button {
 }
 
 .hamburger {
-  background-color: #a0ffdd;
+  background-color: #b7fff6;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -130,7 +134,7 @@ button {
   width: 21%;
   height: 230px;
   margin: 2%;
-  background-color: #a0ffdd;
+  background-color: #b7fff6;
   border: none;
   position: relative;
   display: flex;
@@ -207,7 +211,7 @@ span {
 }
 
 .close-background:hover {
-  background-color: #a0ffdd;
+  background-color: #b7fff6;
   border-radius: 50%;
   transition: background-color .5s;
 }
