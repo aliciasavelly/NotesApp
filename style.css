@@ -234,6 +234,37 @@ span {
 }
 
 @media only screen and (max-device-width: 480px) {
+  .top-bar {
+    margin: 2em 0 0 2em;
+  }
+
+  .new-note-button {
+    font-size: 7em;
+  }
+
+  .new-note-button, .hamburger {
+    width: 120px;
+    height: 120px;
+    position: relative;
+  }
+
+  .hamburger {
+    font-size: 4em;
+  }
+
+  .no-margin {
+    margin: 0;
+    position: absolute;
+    bottom: 3px;
+  }
+
+  .color-picker {
+    width: 90px;
+    height: 90px;
+    border-radius: 2.5em;
+    margin: 1em;
+  }
+
   #notes-section {
     margin-top: 2em;
   }
@@ -245,36 +276,13 @@ span {
     font-size: 3em;
   }
 
-  .no-margin {
-    margin: 0;
-    position: absolute;
-    bottom: 3px;
-  }
-
-  .new-note-button, .hamburger {
-    width: 120px;
-    height: 120px;
-    position: relative;
-  }
-
-  .new-note-button {
-    font-size: 7em;
-  }
-
-  .hamburger {
-    font-size: 4em;
-  }
-
-  .color-picker {
-    width: 90px;
-    height: 90px;
-    border-radius: 2.5em;
-    margin: 1em;
-  }
-
   .x-button {
     font-size: 55px;
     margin: .1em .2em 0 0;
+  }
+
+  .close-background {
+    display: none;
   }
 
   .background-img {
@@ -285,14 +293,6 @@ span {
 
   .background-img:last-child {
     margin-bottom: 2em;
-  }
-
-  .close-background {
-    display: none;
-  }
-
-  .top-bar {
-    margin: 2em 0 0 2em;
   }
 }
 
