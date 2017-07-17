@@ -24,12 +24,12 @@ function changeNoteColor(color) {
   $(".note").css("background-color", color);
   $(".hamburger").css("background-color", color);
   $(".new-note-button").css("background-color", color);
+
   $(".close-background").mouseenter(function() {
     $(".close-background").css("background-color", color);
   }).mouseleave(function() {
     $(".close-background").css("background-color", "Transparent");
   });
-  // $(".close-background").hover().css("background-color", "blue");
 
   let backgroundColors = {
     "#fdffaa": "#FFFFEE",
