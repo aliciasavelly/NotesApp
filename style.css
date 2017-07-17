@@ -319,3 +319,27 @@ span {
     margin: 2.5%;
   }
 }
+
+@media (max-width: 370px) {
+  .left-section {
+    flex-direction: column;
+  }
+
+  .new-note-button {
+    left: -60px;
+  }
+
+  .colors {
+    margin-top: 1em;
+  }
+
+  .background-div {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: -52px;
+    left: -50px;
+  }
+}
