@@ -203,11 +203,13 @@ span {
   left: 125px;
   top: 3px;
   outline: none;
+  text-align: center;
 }
 
-.close-background {
-  background-color: blue;
+.close-background:hover {
+  background-color: #a0ffdd;
   border-radius: 50%;
+  transition: background-color .5s;
 }
 
 .background-images {
@@ -221,6 +223,10 @@ span {
   margin: 10px 10px 0 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.background-img:hover {
+    opacity: .75;
 }
 
 .background-img:last-child {
