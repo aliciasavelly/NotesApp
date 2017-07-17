@@ -208,12 +208,12 @@ span {
   top: 3px;
   outline: none;
   text-align: center;
+  border-radius: 50%;
+  transition: background-color .5s ease-in-out;
 }
 
 .close-background:hover {
   background-color: #b7fff6;
-  border-radius: 50%;
-  transition: background-color .5s;
 }
 
 .background-images {
