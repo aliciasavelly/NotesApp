@@ -47,11 +47,13 @@ function closeBackgroundSection() {
     $(".choose-background").css("display", "none");
     $(".choose-background").animate({opacity: 1});
   }, 500);
-  // $(".choose-background").animate({opacity: 0});
 }
 
 function changeBackground(src) {
-  closeBackgroundSection();
+  if (screen.width < 415) {
+    closeBackgroundSection();
+  }
+  
   $("body").css("background-image", `url(${src})`);
 }
 
