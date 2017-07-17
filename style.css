@@ -45,6 +45,10 @@ button {
   transition: box-shadow .25s ease-in-out;
 }
 
+.colors {
+  cursor: default;
+}
+
 .no-margin {
   margin: 0;
   position: absolute;
