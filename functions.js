@@ -1,5 +1,5 @@
 NOTES_IDX = 1;
-CURRENT_NOTE_COLOR = "#a0ffdd";
+CURRENT_NOTE_COLOR = "#b7fff6";
 
 function newNote() {
   $("#notes-section").prepend(`<div id="note-${NOTES_IDX}"
