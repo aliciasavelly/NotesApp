@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+  /*height: 100%;*/
 }
 
 body {
@@ -159,7 +159,7 @@ button {
 span {
   width: 90%;
   margin: 2px 4%;
-  cursor: pointer;
+  cursor: text;
   height: 85%;
   display: block;
   overflow: auto;
@@ -233,6 +233,54 @@ span {
   margin-bottom: 10px;
 }
 
+@media (max-width: 900px) {
+  .note {
+    width: 46%;
+    margin: 2%;
+  }
+
+  .x-button {
+    left: 93%;
+  }
+}
+
+@media (max-width: 800px) {
+  .x-button {
+    left: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .note {
+    width: 95%;
+    margin: 2.5%;
+  }
+}
+
+@media (max-width: 370px) {
+  .left-section {
+    flex-direction: column;
+  }
+
+  .new-note-button {
+    left: -60px;
+  }
+
+  .colors {
+    margin-top: 1em;
+  }
+
+  .background-div {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: -52px;
+    left: -50px;
+  }
+}
+
 @media only screen and (max-device-width: 480px) {
   .top-bar {
     margin: 2em 0 0 2em;
@@ -293,53 +341,5 @@ span {
 
   .background-img:last-child {
     margin-bottom: 2em;
-  }
-}
-
-@media (max-width: 900px) {
-  .note {
-    width: 46%;
-    margin: 2%;
-  }
-
-  .x-button {
-    left: 93%;
-  }
-}
-
-@media (max-width: 800px) {
-  .x-button {
-    left: 90%;
-  }
-}
-
-@media (max-width: 600px) {
-  .note {
-    width: 95%;
-    margin: 2.5%;
-  }
-}
-
-@media (max-width: 370px) {
-  .left-section {
-    flex-direction: column;
-  }
-
-  .new-note-button {
-    left: -60px;
-  }
-
-  .colors {
-    margin-top: 1em;
-  }
-
-  .background-div {
-    position: relative;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: -52px;
-    left: -50px;
   }
 }
