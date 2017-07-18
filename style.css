@@ -329,10 +329,10 @@ span {
   }
 
   .color-picker {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 2.5em;
-    margin: 1em;
+    margin: 0.5em;
   }
 
   #notes-section {
