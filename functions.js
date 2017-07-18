@@ -11,7 +11,8 @@ function newNote() {
                                        name="button"
                                        class="x-button"
                                        onClick="deleteNote('note-${NOTES_IDX}')">X</button></div>
-                               <span placeholder='Type here...'
+                               <span id="span-${NOTES_IDX}"
+                                     placeholder='Type here...'
                                      contenteditable='true'></span></div>`);
   NOTES_IDX += 1;
 }
@@ -62,6 +63,10 @@ function changeBackground(src) {
   }
 
   $("body").css("background-image", `url(${src})`);
+}
+
+function removePlaceholder(id) {
+  $(`#${id}`).removeAttr('placeholder');
 }
 
 window.onload = function clickOutside() {
