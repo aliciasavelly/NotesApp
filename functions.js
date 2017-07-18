@@ -13,6 +13,7 @@ function newNote() {
                                        onClick="deleteNote('note-${NOTES_IDX}')">X</button></div>
                                <span id="span-${NOTES_IDX}"
                                      placeholder='Type here...'
+                                     onClick="removePlaceholder(this.id)"
                                      contenteditable='true'></span></div>`);
   NOTES_IDX += 1;
 }
