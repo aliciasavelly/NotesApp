@@ -304,6 +304,10 @@ span {
 }
 
 @media only screen and (max-device-width: 480px) {
+  body {
+    height: 100vh;
+  }
+
   .top-bar {
     margin: 2em 0 0 2em;
   }
