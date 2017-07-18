@@ -329,7 +329,7 @@ span {
   .no-margin {
     margin: 0;
     position: absolute;
-    bottom: -10px;
+    bottom: 0px;
   }
 
   .color-picker {
