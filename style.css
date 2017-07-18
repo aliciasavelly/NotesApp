@@ -1,5 +1,5 @@
 body {
-  background-image: url('backgrounds/brooke-lark.jpg');
+  background: url('backgrounds/brooke-lark.jpg') no-repeat center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
