@@ -6,7 +6,6 @@ body {
 
 .top-bar {
   display: flex;
-  /*align-items: center;*/
   margin: 20px 0 0 20px;
   justify-content: space-between;
 }
