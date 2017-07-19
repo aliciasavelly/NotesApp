@@ -2,19 +2,22 @@ NOTES_IDX = 1;
 CURRENT_NOTE_COLOR = "#b7fff6";
 
 function newNote() {
-  $("#notes-section").prepend(`<div id="note-${NOTES_IDX}"
-                                    class='note'
-                                    style="background-color:${CURRENT_NOTE_COLOR}">
-                               <div class="button-holder">
-                               <button id=${NOTES_IDX}
-                                       type="button"
-                                       name="button"
-                                       class="x-button"
-                                       onClick="deleteNote('note-${NOTES_IDX}')">X</button></div>
-                               <span id="span-${NOTES_IDX}"
-                                     placeholder='Type here...'
-                                     onClick="removePlaceholder(this.id)"
-                                     contenteditable='true'></span></div>`);
+  $("#notes-section").prepend(
+      `<div id="note-${NOTES_IDX}"
+            class="note"
+            style="background-color:${CURRENT_NOTE_COLOR}">
+         <div class="button-holder">
+           <button id=${NOTES_IDX}
+                   type="button"
+                   name="button"
+                   class="x-button"
+                   onClick="deleteNote('note-${NOTES_IDX}')">X
+           </button>
+         </div>
+       <span id="span-${NOTES_IDX}"
+             placeholder="Type here..."
+             onClick="removePlaceholder(this.id)"
+             contenteditable='true'></span></div>`);
   NOTES_IDX += 1;
 }
 
