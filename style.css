@@ -2,6 +2,7 @@
   --green-blue: #b7fff6;
   --button-h-w: 40px;
   --s-button-h-w: 30px;
+  --font: 20px;
 }
 
 body {
@@ -121,7 +122,7 @@ button {
   width: var(--button-h-w);
   height: var(--button-h-w);
   margin: 8px 15px 0 0;
-  font-size: 20px;
+  font-size: var(--font);
   background-color: var(--green-blue);
   border: none;
   border-radius: 50%;
@@ -174,7 +175,7 @@ transition: box-shadow .25s ease-in-out;
 }
 
 .x-button {
-  font-size: 20px;
+  font-size: var(--font);
   background-color: Transparent;
   border: none;
   float: right;
@@ -216,7 +217,7 @@ span {
   height: var(--s-button-h-w);
   margin: 3px 10px 0 10px;
   line-height: 10px;
-  font-size: 20px;
+  font-size: var(--font);
   border: none;
   border-radius: 50%;
   outline: none;
