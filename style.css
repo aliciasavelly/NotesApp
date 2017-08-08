@@ -1,5 +1,7 @@
 :root {
   --green-blue: #b7fff6;
+  --button-h-w: 40px;
+  --s-button-h-w: 30px;
 }
 
 body {
@@ -25,8 +27,8 @@ button {
 }
 
 .new-note-button {
-  width: 40px;
-  height: 40px;
+  width: var(--button-h-w);
+  height: var(--button-h-w);
   font-size: 2.5em;
   margin: 0 30px 0 0;
   background-color: #b7fff6;
@@ -104,8 +106,8 @@ button {
 }
 
 .color-picker {
-  width: 30px;
-  height: 30px;
+  width: var(--s-button-h-w);
+  height: var(--s-button-h-w);
   margin: 0 3px;
   border: none;
   border-radius: 10px;
@@ -116,8 +118,8 @@ button {
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: var(--button-h-w);
+  height: var(--button-h-w);
   margin: 8px 15px 0 0;
   font-size: 20px;
   background-color: var(--green-blue);
@@ -210,8 +212,8 @@ span {
 }
 
 .close-background {
-  width: 30px;
-  height: 30px;
+  width: var(--s-button-h-w);
+  height: var(--s-button-h-w);
   margin: 3px 10px 0 10px;
   line-height: 10px;
   font-size: 20px;
